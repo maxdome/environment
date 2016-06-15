@@ -41,6 +41,7 @@ const appSilentLogger = environment.silentLogging('app');
   * ```appdynamics.active``` is removed, to disable appdynamics remove the ```appdynamics``` attribute
   * profile config is moved from ```appdynamics.profile``` to ```appdynamics```
 * info:
+  * the ```summarize``` function which can be hooked in don't get anymore the ```info``` parameter
   * ```/info``` is not anymore available and splittet up in subroutes:
     * the ```config``` attribute in the response of ```/info``` is now the response of ```/info/config```
     * the ```package``` attribute in the response of ```/info``` is now the response of ```/info/package```
