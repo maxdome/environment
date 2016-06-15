@@ -34,9 +34,9 @@ const appSilentLogger = environment.silentLogging('app');
 
 * ```maxdome-node-``` prefix is everywhere renamed to ```mxd-```
 * functionalities now splitted in separated packages mostly named like the attributes of the old ```environment```
-* ```mxd-environment``` collects the standard functionalities
+* ```mxd-environment``` collects the standard functionalities like ```maxdome-node-environment``` done
   * the ```config``` parameter is now mandatory
-  * the attributes ```LoggerFactory``` and ```SilentLoggerFactory``` are renamed to ```logging``` and ```silentLogging```
+  * the attributes ```LoggerFactory``` and ```SilentLoggerFactory``` are renamed to ```logging``` and ```silentLogging```, see also logging section
 * info:
   * the ```summarize``` function which can be hooked in don't get anymore the ```info``` parameter
   * ```/info``` is not anymore available and splittet up in subroutes:
@@ -47,6 +47,11 @@ const appSilentLogger = environment.silentLogging('app');
 * logging:
   * is now splitted into ```logging``` and ```silent-logging```
   * use directly the returned factory function instead of ```.getCategoryLogger```
+  * OR use a wrapper:
+  ```
+  const LoggerFactory = { getCategoryLogger: environment.silentLogging };
+  const SilentLoggerFactory = { getCategoryLogger: environment.silentLogging };
+  ```
 * starter:
   * pm2 options can't anymore changed by the ```package.json```, only by the ```config/properties.json```
   * pm2 options in the ```properties.json``` are now located under ```mxd-starter```
