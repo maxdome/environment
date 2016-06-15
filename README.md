@@ -18,6 +18,18 @@ const appLogger = environment.logging('app');
 const appSilentLogger = environment.silentLogging('app');
 ```
 
+* ```package.json```:
+```
+{
+  "scripts": {
+    "start": "mxd-start",
+    "status" : "mxd-status",
+    "stop" : "mxd-stop"
+  }
+}
+```
+
+
 # upgrade from ```maxdome-node-environment```
 
 * ```maxdome-node-``` prefix is everywhere renamed to ```mxd-```
@@ -25,7 +37,6 @@ const appSilentLogger = environment.silentLogging('app');
 * ```mxd-environment``` collects the standard functionalities
   * the ```config``` parameter is now mandatory
   * the attributes ```LoggerFactory``` and ```SilentLoggerFactory``` are renamed to ```logging``` and ```silentLogging```
-  * ```mxd-starter``` is not anymore part of the ```mxd-environment``` and must be separated installed
 * appdynamics:
   * ```appdynamics.active``` is removed, to disable appdynamics remove the ```appdynamics``` attribute
   * profile config is moved from ```appdynamics.profile``` to ```appdynamics```

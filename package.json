@@ -1,16 +1,22 @@
 {
   "name": "mxd-environment",
   "description": "Includes all NPM packages for an app in a maxdome node environment",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "http://github.com/maxdome/environment",
   "readmeFilename": "README.md",
+  "bin": {
+    "mxd-start": "node_modules/mxd-starter/bin/mxd-start.js",
+    "mxd-status": "node_modules/mxd-starter/bin/mxd-status.js",
+    "mxd-stop": "node_modules/mxd-starter/bin/mxd-stop.js"
+  },
   "main": "src/lib.js",
   "dependencies": {
     "mxd-config": "^1.0.0",
     "mxd-healthcheck": "^1.0.0",
     "mxd-info": "^1.0.0",
     "mxd-logging": "^1.0.0",
-    "mxd-silent-logging": "^1.0.0"
+    "mxd-silent-logging": "^1.0.0",
+    "mxd-starter": "^1.0.1"
   },
   "repository": {
     "type": "git",
