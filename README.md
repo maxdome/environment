@@ -50,7 +50,6 @@ const appSilentLogger = environment.silentLogging('app');
 * logging:
   * is now splitted into ```logging``` and ```silent-logging```
   * use directly the returned factory function instead of ```.getCategoryLogger```
-  * transports config is moved from ```logging.transports``` to ```logging```
 * starter:
   * pm2 options can't anymore changed by the ```package.json```, only by the ```config/properties.json```
   * pm2 options in the ```properties.json``` are now located under ```mxd-starter```
