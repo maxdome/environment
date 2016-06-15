@@ -37,9 +37,6 @@ const appSilentLogger = environment.silentLogging('app');
 * ```mxd-environment``` collects the standard functionalities
   * the ```config``` parameter is now mandatory
   * the attributes ```LoggerFactory``` and ```SilentLoggerFactory``` are renamed to ```logging``` and ```silentLogging```
-* appdynamics:
-  * ```appdynamics.active``` is removed, to disable appdynamics remove the ```appdynamics``` attribute
-  * profile config is moved from ```appdynamics.profile``` to ```appdynamics```
 * info:
   * the ```summarize``` function which can be hooked in don't get anymore the ```info``` parameter
   * ```/info``` is not anymore available and splittet up in subroutes:
