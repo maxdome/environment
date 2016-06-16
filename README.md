@@ -54,5 +54,5 @@ const appSilentLogger = environment.silentLogging('app');
   ```
 * starter:
   * pm2 options can't anymore changed by the ```package.json```, only by the ```config/properties.json```
-  * pm2 options in the ```properties.json``` are now located under ```mxd-starter```
+  * pm2 options in the ```properties.json``` are now located under ```mxd-starter```, but ```maxdome-node-starter``` is still supported for compatibility
   * cli commands are named with the prefix ```mxd-``` instead of ```maxdome-node-```
