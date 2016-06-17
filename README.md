@@ -39,7 +39,7 @@ const appSilentLogger = environment.silentLogging('app');
   * the attributes ```LoggerFactory``` and ```SilentLoggerFactory``` are renamed to ```logging``` and ```silentLogging```, see also logging section
 * info:
   * the ```summarize``` function which can be hooked in don't get anymore the ```info``` parameter
-  * ```/info``` is not anymore available and splittet up in subroutes:
+  * ```/info``` responses now the summary, the other information are available under subroutes:
     * the ```config``` attribute in the response of ```/info``` is now the response of ```/info/config```
     * the ```package``` attribute in the response of ```/info``` is now the response of ```/info/package```
     * the ```revision``` attribute is part of the response of ```/info/version```
