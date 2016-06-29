@@ -29,6 +29,11 @@ const appSilentLogger = environment.silentLogging('app');
 }
 ```
 
+# upgrade from ```mxd-environment 1.x```
+
+* starter:
+  * the compatibility with the ```maxdome-node-starter``` attribute in the ```properties.json``` is removed, use ```mxd-starter```
+
 
 # upgrade from ```maxdome-node-environment```
 
@@ -53,6 +58,5 @@ const appSilentLogger = environment.silentLogging('app');
   const SilentLoggerFactory = { getCategoryLogger: environment.silentLogging };
   ```
 * starter:
-  * pm2 options can't anymore changed by the ```package.json```, only by the ```config/properties.json```
-  * pm2 options in the ```properties.json``` are now located under ```mxd-starter```, but ```maxdome-node-starter``` is still supported for compatibility
+  * pm2 options in the ```package.json``` and ```properties.json``` are now located under ```mxd-starter``` 
   * cli commands are named with the prefix ```mxd-``` instead of ```maxdome-node-```
