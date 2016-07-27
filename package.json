@@ -1,7 +1,7 @@
 {
   "name": "mxd-environment",
   "description": "Includes all NPM packages for an app in a maxdome node environment",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "homepage": "http://github.com/maxdome/environment",
   "readmeFilename": "README.md",
   "bin": {
