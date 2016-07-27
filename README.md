@@ -29,6 +29,12 @@ const appSilentLogger = environment.silentLogging('app');
 }
 ```
 
+# upgrade from ```mxd-environment 2.x```
+
+* info:
+  * the JSON paths to disguise values of the config must be prefixed with ```config.```
+
+
 # upgrade from ```mxd-environment 1.x```
 
 * starter:
@@ -49,7 +55,6 @@ const appSilentLogger = environment.silentLogging('app');
     * the ```package``` attribute in the response of ```/info``` is now the response of ```/info/package```
     * the ```revision``` attribute is part of the response of ```/info/version```
   * ```/info/environments``` is removed to avoid basic auth credentials in the config, the ```environments``` section in the config can be removed 
-  * the JSON paths in the config ```info``` don't must anymore the prefix ```config.```, values in the ```package.json``` can't anymore get disguised 
 * logging:
   * is now splitted into ```logging``` and ```silent-logging```
   * use directly the returned factory function instead of ```.getCategoryLogger```
