@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = (config) => {
-  const environment = {};
+  const environment = {
+    ping: require('./ping.js')()
+  };
 
   require('mxd-config')(config);
   environment.healthcheck = require('mxd-healthcheck')();

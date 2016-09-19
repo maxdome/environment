@@ -5,6 +5,7 @@
 // initialize the environment
 const config = {};
 const environment = require('mxd-environment')(config);
+environment.ping(app);
 
 // initialize the healthcheck routes with the express app
 const healthcheck = environment.healthcheck;
