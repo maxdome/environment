@@ -1,12 +1,30 @@
 # Example
 
-* ```app.js```:
+* `app.js` (with babel and destructioning):
+  
 ```
 const { app, checkhelper, config, express, healthcheck, info, logging, silentLogging }
   = require('mxd-environment')();
+  
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});  
+```
+  
+* `app.js` (without babel):
+  
+```
+// alternative
+const environment = require('mxd-environment')();
+const app = environment.app;
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 ```
 
-* ```package.json```:
+* `package.json`:
+
 ```
 {
   "scripts": {
@@ -20,6 +38,6 @@ const { app, checkhelper, config, express, healthcheck, info, logging, silentLog
 }
 ```
 
-# upgrade from ```mxd-environment 3.x```
+# upgrade from mxd-environment v3.x
 
 coming soon...
