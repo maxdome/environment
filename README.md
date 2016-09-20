@@ -2,7 +2,8 @@
 
 * ```app.js```:
 ```
-const { app, config } = require('mxd-environment')();
+const { app, checkhelper, config, express, healthcheck, info, logging, silentLogging }
+  = require('mxd-environment')();
 ```
 
 * ```package.json```:
