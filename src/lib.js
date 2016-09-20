@@ -3,8 +3,14 @@
 module.exports = environment => {
   const config = require('mxd-config')(environment);
 
-  const { app, express } = require('mxd-express')(config);
-  const { checkhelper, healthcheck } = require('mxd-healthcheck')(config, app);
+  const mxdExpress = require('mxd-express')(config);
+  const app = mxdExpress.app;
+  const express = mxdExpress.express;
+
+  const mxdHealthcheck = require('mxd-healthcheck')(config, app);
+  const checkhelper = mxdHealthcheck.checkhelper;
+  const healthcheck = mxdHealthcheck.healthcheck;
+
   const info = require('mxd-info')(config, app);
   const logging = require('mxd-logging')(config);
   const silentLogging = require('mxd-silent-logging')(config);
