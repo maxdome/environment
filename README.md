@@ -6,6 +6,8 @@
 const { app, checkhelper, config, express, healthcheck, info, logging, silentLogging }
   = require('mxd-environment')();
   
+// example route
+  
 app.get('/', (req, res) => {
   res.send('Hello World!');
 });  
@@ -14,9 +16,10 @@ app.get('/', (req, res) => {
 * `app.js` (without babel):
   
 ```
-// alternative
 const environment = require('mxd-environment')();
 const app = environment.app;
+
+// example route
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
@@ -38,6 +41,6 @@ app.get('/', (req, res) => {
 }
 ```
 
-# upgrade from mxd-environment v3.x
+# Upgrade from mxd-environment v3.x
 
 coming soon...
