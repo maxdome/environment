@@ -66,7 +66,7 @@ All configurations can be overwritten in the `config/properties.json`.
 There are different attributes offered by the different subpackages of the `mxd-environment` and different depending on 
 the application itself.
 
-**Important: If an attribute is overwritten, the complete tree of the attribut must be defined!**
+**Important:** If an attribute is overwritten, the complete tree of the attribut must be defined!
 
 * `mxd-express`:
 ```
@@ -92,6 +92,8 @@ the application itself.
   }
 }
 ```
+
+* `mxd-starter`: A bit special and descriped separatly https://github.com/maxdome/mxd-starter
 
 ## Routes
 
