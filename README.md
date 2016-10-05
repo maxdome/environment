@@ -1,5 +1,8 @@
 # Development
 
+For starting a new project or see the `mxd-environment` in action a template is available:
+https://github.com/maxdome/mxd-environment-template
+
 ## Example
 
 * `app.js` (with babel and destructioning):
@@ -45,7 +48,12 @@ app.get('/', (req, res) => {
 
 ## Upgrade from mxd-environment v3.x
 
-coming soon...
+* `mxd-config` handles also the `all.json` and `development.json`. The code to require them can be removed. Also the 
+`config` param to initialize `mxd-environment` must be removed. The `config` is available via `environment.config`
+* The express `app` is now initialized (includes also the `.listen()`) by the library, use it via `environment.app`, 
+the express library is available via `environment.express`
+* The `app` param is removed from `environment.info()` and `environment.healthcheck()`
+* `environment.healthcheck.checkhelper` is now `environment.checkhelper`
 
 
 # Systemadministration
@@ -55,7 +63,8 @@ Documentation contains all subpackages and the additional `mxd-swagger`.
 ## Configuration
 
 All configurations can be overwritten in the `config/properties.json`.
-There are different attributes offered by the different subpackages of the `mxd-environment` and different depending on the application itself.
+There are different attributes offered by the different subpackages of the `mxd-environment` and different depending on 
+the application itself.
 
 **Important: If an attribute is overwritten, the complete tree of the attribut must be defined!**
 
@@ -86,8 +95,7 @@ There are different attributes offered by the different subpackages of the `mxd-
 
 ## Routes
 
-* `mxd-express`: 
-`/ping` (all HTTP verbs are allowed) response a 200 if the app is running and shouldn't be restricted
+* `mxd-express`: `/ping` (all HTTP verbs are allowed) response a 200 if the app is running and shouldn't be restricted
 
-* `mxd-healthcheck`, `mxd-info`, `mxd-swagger`: 
-All routes starting with `/docs`, `/health`, `/info` and the route `/api-docs` should be available in the office network or restricted by basic auth
+* `mxd-healthcheck`, `mxd-info`, `mxd-swagger`: All routes starting with `/docs`, `/health`, `/info` and the route 
+`/api-docs` should be available in the office network or restricted by basic auth
