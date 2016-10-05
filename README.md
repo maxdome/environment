@@ -50,6 +50,8 @@ coming soon...
 
 # Systemadministration
 
+Documentation contains all subpackages and the additional `mxd-swagger`.
+
 ## Configuration
 
 All configurations can be overwritten in the `config/properties.json`.
