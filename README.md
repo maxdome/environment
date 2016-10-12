@@ -31,6 +31,10 @@ app.get('/', (req, res) => {
 });
 ```
 
+## Optional NPM packages
+
+### mxd-starter (PM2 integration)
+
 * `package.json`:
 
 ```
@@ -41,10 +45,30 @@ app.get('/', (req, res) => {
     "stop" : "mxd-stop"
   },
   "dependencies: {
-    "mxd-environment": "^4.0.0"
+    "mxd-starter": "^2.1.0"
   }
 }
 ```
+
+### mxd-swagger
+
+`mxd-environment` will automatically setting up the package if its installed.
+
+* `package.json`:
+
+```
+{
+  "dependencies: {
+    "mxd-starter": "^1.0.5"
+  }
+}
+```
+
+## Upgrade from mxd-environment v4.x
+
+* `mxd-starter` is now an optional dependency. It must be defined as project dependency if its in use 
+* `mxd-swagger` is now automatically setting up if its installed
+
 
 ## Upgrade from mxd-environment v3.x
 
