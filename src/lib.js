@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = environment => {
-  const config = require('mxd-config')(environment);
+module.exports = opts => {
+  const config = require('mxd-config')(opts);
 
   const mxdExpress = require('mxd-express')(config);
   const app = mxdExpress.app;
