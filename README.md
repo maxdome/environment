@@ -59,7 +59,7 @@ app.get('/', (req, res) => {
 ```
 {
   "dependencies: {
-    "mxd-starter": "^1.0.5"
+    "mxd-swagger": "^1.0.5"
   }
 }
 ```
