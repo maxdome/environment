@@ -1,12 +1,12 @@
 {
   "name": "mxd-environment",
   "description": "Includes all NPM packages for an app in a maxdome node environment",
-  "version": "5.1.0",
+  "version": "6.0.0",
   "homepage": "http://github.com/maxdome/environment",
   "readmeFilename": "README.md",
   "main": "src/lib.js",
   "dependencies": {
-    "mxd-config": "^2.1.0",
+    "mxd-config": "^3.0.0",
     "mxd-express": "^1.0.0",
     "mxd-healthcheck": "^2.0.0",
     "mxd-info": "^3.0.0",
