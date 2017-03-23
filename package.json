@@ -8,7 +8,7 @@
   "dependencies": {
     "mxd-config": "^3.1.0",
     "mxd-express": "^1.0.0",
-    "mxd-healthcheck": "^2.0.0",
+    "mxd-healthcheck": "^2.2.0",
     "mxd-info": "^3.0.0",
     "mxd-logging": "^1.1.0",
     "mxd-silent-logging": "^1.1.0"
