@@ -1,3 +1,7 @@
+**DEPRECATED: Use [maxdome-node](https://github.com/maxdome/maxdome-node)**
+
+* * *
+
 # Development
 
 For starting a new project or see the `mxd-environment` in action a template is available:
